@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+.container {
+    margin: 1em auto 0;
+    min-width: 480px;
+    width: 90%;
+}
+.logo {
+    border: 5px solid #bc1e2c;
+    box-sizing: border-box;
+    width: 100%;
+}
