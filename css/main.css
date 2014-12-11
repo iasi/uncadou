@@ -17,6 +17,7 @@ body {
 #contact {
     color: #bc1e2c;
     margin-left: 1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 a[href^="tel:"]:before {
     content: "☎";
