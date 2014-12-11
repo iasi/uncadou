@@ -3,10 +3,7 @@
 */
 
 body {
-    background-color: black;
-    margin: 0 auto;
     min-width: 480px;
-    width: 90%;
 }
 .logo {
     color: #bc1e2c;
@@ -15,8 +12,6 @@ body {
     font-size: 3em;
 }
 .horizontal-img {
-    border: 5px solid #bc1e2c;
-    box-sizing: border-box;
     width: 100%;
 }
 #contact {
