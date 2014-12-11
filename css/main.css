@@ -1,13 +1,40 @@
+/*
+    border-red  #bc1e2c
+*/
+
 body {
     background-color: black;
-}
-.container {
-    margin: 1em auto 0;
+    margin: 0 auto;
     min-width: 480px;
     width: 90%;
 }
 .logo {
+    color: #bc1e2c;
+    display: block;
+    font-family: "Josefin Slab",serif;
+    font-size: 3em;
+}
+.horizontal-img {
     border: 5px solid #bc1e2c;
     box-sizing: border-box;
     width: 100%;
+}
+#contact {
+    color: #bc1e2c;
+    margin-left: 1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+a[href^="tel:"]:before {
+    content: "☎";
+    margin-right: 0.5em;
+}
+a {
+    color: #bc1e2c;
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0.5em;
+}
+header {
+    padding: 1em 1em 0;
 }
