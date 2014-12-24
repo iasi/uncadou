@@ -2,15 +2,11 @@
     logo-red:  #bc1e2c
 */
 
-body {
-    min-width: 480px;
-}
-
 .feature-img {
     width: 100%;
 }
 
-a[href^="tel:"]:before {
+#contact a[href^="tel:"]:before {
     content: "☎";
     margin-right: 0.5em;
 }
@@ -25,6 +21,8 @@ p {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     padding: 1em 1em 0;
 }
 
@@ -32,7 +30,7 @@ header {
     header h1 {
         color: #bc1e2c;
         font-family: "Josefin Slab",serif;
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: normal;
         margin: 0;
         width: -moz-min-content;
@@ -40,6 +38,39 @@ header {
         width: min-content;
     }
 
+    header a {
+        align-self: center
+    }
+
+        /* call button */
+        header svg {
+            fill: #FFCF13;
+            width: 3.5em;
+            transform: scaleX(-1);
+        }
+
 .container {
     margin-left: 1em;
+}
+
+#ruler {
+    background: no-repeat no-repeat url("../images/woodgrainruler.jpg");
+    height: 102px;
+    margin-bottom: 20px;
+}
+
+#location {
+    display: none;
+    font-size: 1.5em;
+    /*text-align: center;*/
+}
+
+@media (min-width: 640px) {
+    #call_button {
+        display: none;
+    }
+
+    #location {
+        display: block;
+    }
 }
