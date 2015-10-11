@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-#contact a[href^="tel:"]:before {
+.contact a[href^="tel:"]:before {
     content: "☎";
     margin-right: 0.5em;
 }
@@ -25,6 +25,10 @@ header {
     justify-content: space-between;
     padding: 1em 1em 0;
 }
+    
+    .component {
+        flex: 0 0 auto;
+    }
 
     /* logo */
     header h1 {
@@ -39,7 +43,7 @@ header {
     }
 
     header a {
-        align-self: center
+        align-self: center;
     }
 
         /* call button */
@@ -48,6 +52,27 @@ header {
             width: 3.5em;
             transform: scaleX(-1);
         }
+    
+    /*header location*/
+    #location {
+        align-self: flex-end;
+        display: none;
+        margin-bottom: .3em;
+    }
+
+        header p {
+            color: #606060;
+            font-weight: 300;
+            font-size: 1.7em;
+            margin-bottom: 0;
+            
+        }
+
+        header strong {
+            color: orange;
+            font-weight: 500;
+        }
+
 
 .container {
     margin-left: 1em;
@@ -59,11 +84,7 @@ header {
     margin-bottom: 20px;
 }
 
-#location {
-    display: none;
-    font-size: 1.5em;
-    /*text-align: center;*/
-}
+
 
 @media (min-width: 640px) {
     #call_button {
@@ -74,3 +95,25 @@ header {
         display: block;
     }
 }
+body {
+    display: flex;  /*sticky footer*/
+    min-height: 100vh;  /*sticky footer*/
+    flex-direction: column; /*sticky footer*/
+    font-family: 'Open Sans', sans-serif;
+}
+#main {
+    flex: 1;    /*sticky footer*/
+}
+
+footer {
+    background: tomato;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+footer nav, 
+footer .contact {
+    width: -webkit-max-content;
+    text-align: center;
+}
+
