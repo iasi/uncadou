@@ -2,6 +2,12 @@
     logo-red:  #bc1e2c
 */
 
+
+@font-face {
+  font-family: "Raleway ExtraLight";
+  src: url("../fonts/Raleway-ExtraLight.ttf");
+}
+
 .feature-img {
     width: 100%;
 }
@@ -31,9 +37,12 @@ header {
     }
 
     /* logo */
-    header h1 {
+    .logo {
         color: #bc1e2c;
         font-family: "Josefin Slab",serif;
+    }
+    header h1 {
+        
         font-size: 2.5em;
         font-weight: normal;
         margin: 0;
@@ -58,32 +67,36 @@ header {
         align-self: flex-end;
         display: none;
         margin-bottom: .3em;
+        text-align: right;
     }
 
         header p {
             color: #606060;
-            font-weight: 300;
             font-size: 1.7em;
             margin-bottom: 0;
             
         }
 
-        header strong {
+        header .colored {
             color: orange;
-            font-weight: 500;
         }
 
+.abstract {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+    h2 {
+        font-family: "Raleway ExtraLight", Raleway, Arial, sans-serif;
+        font-size: 56px;
+        margin: 50px 20px;
+        font-weight: 200;
+    }
 
 .container {
     margin-left: 1em;
 }
-
-#ruler {
-    background: no-repeat no-repeat url("../images/woodgrainruler.jpg");
-    height: 102px;
-    margin-bottom: 20px;
-}
-
 
 
 @media (min-width: 640px) {
@@ -96,17 +109,23 @@ header {
     }
 }
 body {
+    background: url("../images/eight_horns.png");
     display: flex;  /*sticky footer*/
     min-height: 100vh;  /*sticky footer*/
     flex-direction: column; /*sticky footer*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway ExtraLight', Raleway, Arial, sans-serif;
+    font-size: 1.4em;
 }
 #main {
     flex: 1;    /*sticky footer*/
 }
 
+header, 
 footer {
-    background: tomato;
+    background-color: rgba(255,255,255,0.6);
+}
+
+footer {
     display: flex;
     justify-content: space-around;
     padding: 1em;
@@ -117,3 +136,11 @@ footer .contact {
     text-align: center;
 }
 
+.group {
+    display: inline-block;
+}
+
+.social img {
+    width: 80px;
+    padding-top: 20px;
+}
