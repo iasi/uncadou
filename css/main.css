@@ -67,6 +67,10 @@ abbr, acronym
     margin-right: 0.5em;
 }
 
+.tel {
+    font-size: 150%;
+}
+
 a {
     color: #bc1e2c;
     text-decoration: none;
